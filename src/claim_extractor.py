@@ -20,6 +20,8 @@ def extract_claims(text):
 
     Return JSON array only.
 
+    Make sure the key is "factual_claims"
+
     Text:
     {text[:15000]}
     """
