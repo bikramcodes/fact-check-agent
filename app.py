@@ -22,7 +22,7 @@ if pdf:
 
         results = []
 
-        for item in claims:
+        for item in claims['factual_claims']:
 
             claim = item["claim"]
 
