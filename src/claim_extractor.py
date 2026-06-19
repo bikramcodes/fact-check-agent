@@ -1,8 +1,10 @@
 from openai import OpenAI
 import json
-import os
+import streamlit as st
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+openai_key = st.secrets["OPENAI_API_KEY"]
+
+client = OpenAI(api_key=openai_key)
 
 def extract_claims(text):
 
