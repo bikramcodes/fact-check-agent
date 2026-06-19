@@ -23,6 +23,8 @@ def verify_claim(claim, evidence):
     INACCURATE
     FALSE
 
+    Return JSON array only.
+
     Return:
 
     {{
