@@ -27,7 +27,6 @@ if pdf:
             claim = item["claim"]
 
             evidence = search_claim(claim)
-            st.write("Evidence length:", len(str(evidence)))
 
             verification = verify_claim(
                 claim,
