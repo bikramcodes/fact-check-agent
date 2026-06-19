@@ -35,6 +35,7 @@ def verify_claim(claim, evidence):
 
     response = client.chat.completions.create(
         model="gpt-4o-mini",
+        response_format={"type": "json_object"},
         messages=[{"role":"user","content":prompt}]
     )
 
