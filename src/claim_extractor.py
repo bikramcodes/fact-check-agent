@@ -30,6 +30,5 @@ def extract_claims(text):
         response_format={"type": "json_object"},
         messages=[{"role":"user","content":prompt}]
     )
-    print(response.choices[0].message.content)
 
     return json.loads(response.choices[0].message.content)
